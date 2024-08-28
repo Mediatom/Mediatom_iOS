@@ -1,0 +1,108 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'testPod' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Mediatom
+  pod 'MediatomiOS', '~> 2.7.7.7'
+
+  # 以下按需导入
+  
+  # 穿山甲
+  # pod 'MediatomiOS/SFAdCsjAdapter'
+  
+  # 优量汇
+  # pod 'MediatomiOS/SFAdGdtAdapter'
+  
+  # 快手联盟
+  # pod 'MediatomiOS/SFAdKsAdapter'
+  
+  # 百度
+  # pod 'MediatomiOS/SFAdBaiduAdapter'
+  
+  # 京准通
+  # pod 'MediatomiOS/SFAdJztAdapter'
+  
+  # 汇盈
+  # pod 'MediatomiOS/SFAdHrAdapter'
+  
+  # 天目
+  # pod 'MediatomiOS/SFAdTmAdapter'
+  
+  # 章鱼
+  # pod 'MediatomiOS/SFAdZyAdapter'
+  
+  # 优推
+  # pod 'MediatomiOS/SFAdYtAdapter'
+  
+  # 科大讯飞
+  # pod 'MediatomiOS/SFAdKdxfAdapter'
+  
+  # Beizi
+  # pod 'MediatomiOS/SFAdBeiziAdapter'
+  
+  # Meishu
+  # pod 'MediatomiOS/SFAdMsAdapter'
+  
+  # Sigmob
+  # pod 'MediatomiOS/SFAdSigmobAdapter'
+  
+  # Mintegral
+  # pod 'MediatomiOS/SFAdMtgAdapter'
+  
+  # Pangle
+  # pod 'MediatomiOS/SFAdPangleAdapter'
+  
+  # AdMob
+  # pod 'MediatomiOS/SFAdMobAdapter'
+  
+  # Meta
+  # pod 'MediatomiOS/SFAdMetaAdapter'
+  
+  # Vungle
+  # pod 'MediatomiOS/SFAdVungleAdapter'
+  
+  # Tanx
+  # pod 'MediatomiOS/SFAdTbAdapter'
+  
+  # UnityAds
+  # pod 'MediatomiOS/SFAdUnityAdapter'
+  
+  # Applovin
+  # pod 'MediatomiOS/SFAdApplovinAdapter'
+
+  # Ironsource
+  # pod 'MediatomiOS/SFAdIronsourceAdapter'
+
+  # Inmobi
+  # pod 'MediatomiOS/SFAdInmobiAdapter'
+
+  # Bigo
+  # pod 'MediatomiOS/SFAdBigoAdapter'
+  
+  # TopOn
+  # pod 'MediatomiOS/SFAdTnAdapter'
+  
+  # TradPlus
+  # pod 'MediatomiOS/SFAdTpAdapter'
+ 
+
+end
+post_install do |installer|
+  installer.aggregate_targets.each do |target|
+    target.xcconfigs.each do |variant, xcconfig|
+      xcconfig_path = target.client_root + target.xcconfig_relative_path(variant)
+      IO.write(xcconfig_path, IO.read(xcconfig_path).gsub("DT_TOOLCHAIN_DIR", "TOOLCHAIN_DIR"))
+    end
+  end
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      if config.base_configuration_reference.is_a? Xcodeproj::Project::Object::PBXFileReference
+        xcconfig_path = config.base_configuration_reference.real_path
+        IO.write(xcconfig_path, IO.read(xcconfig_path).gsub("DT_TOOLCHAIN_DIR", "TOOLCHAIN_DIR"))
+      end
+    end
+  end
+end
