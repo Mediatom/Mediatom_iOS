@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MediatomiOS"
-  s.version      = "2.7.8.6"
+  s.version      = "2.8.0"
   s.summary      = "Mobile App Aggregation Ad SDK of Mediatom SDK for iOS."
   s.description  = <<-DESC
             Mediatom SDK is an advertising aggregation SDK that allows you to monetize iOS applications through Mediatom advertising.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.xcconfig =   { 'OTHER_LDFLAGS' => ['-lObjC']}
   s.pod_target_xcconfig =   { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i' }
   
-  s.source = { :http => "https://github.com/QianChengWuXian/Mediatom_iOS/releases/download/#{s.version}/MediatomiOS.zip" }
+  s.source = { :http => "https://github.com/Mediatom/Mediatom_iOS/releases/download/#{s.version}/MediatomiOS.zip" }
     
   s.default_subspecs = 'MSaas'
 
