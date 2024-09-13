@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MediatomiOS"
-  s.version      = "2.8.0"
+  s.version      = "2.8.0.2"
   s.summary      = "Mobile App Aggregation Ad SDK of Mediatom SDK for iOS."
   s.description  = <<-DESC
             Mediatom SDK is an advertising aggregation SDK that allows you to monetize iOS applications through Mediatom advertising.
@@ -8,10 +8,6 @@ Pod::Spec.new do |s|
   s.homepage     = "https://www.mediatom.cn/dockingdocs/detail?id=70"
   s.license      = { :type => "MIT" }
   s.author       = 'Lurich'
-  s.maintainers = [
-      { "name" => "xiaofu", "email" => "3290235031@qq.com" },
-      { "name" => "sunandfu", "email" => "1451833260@qq.com", "github" => "sunandfu" }
-]
 
   
   s.platform     = :ios, '11.0'
@@ -290,14 +286,14 @@ Pod::Spec.new do |s|
     ss.ios.deployment_target = '11.0'
     ss.dependency 'TradPlusAdSDK', '11.3.0'
     
-    ss.dependency 'TradPlusAdSDK/IronSourceAdapter'
-    ss.dependency 'TradPlusAdSDK/TPCrossAdapter'
-    ss.dependency 'TradPlusAdSDK/YandexAdapter'
-    ss.dependency 'IronSourceSDK'
-    ss.dependency 'YandexMobileAds'
-    ss.dependency 'TradPlusAdSDK/HeliumAdapter'
-    ss.dependency 'ChartboostMediationSDK'
-    ss.dependency 'ChartboostMediationAdapterChartboost'
+    ss.dependency 'TradPlusAdSDK/IronSourceAdapter', '11.3.0'
+    ss.dependency 'TradPlusAdSDK/TPCrossAdapter', '11.3.0'
+    ss.dependency 'TradPlusAdSDK/YandexAdapter', '11.3.0'
+    ss.dependency 'IronSourceSDK','8.0.0'
+    ss.dependency 'YandexMobileAds','7.0.1'
+    ss.dependency 'ChartboostMediationSDK','4.9.0.1'
+    ss.dependency 'ChartboostMediationAdapterChartboost','4.9.7.0.0'
+    ss.dependency 'TradPlusAdSDK/HeliumAdapter', '11.3.0'
     
     ss.dependency 'MediatomiOS/MSaas'
     ss.vendored_frameworks = 'MediatomiOS/SFAdTpAdapter.xcframework'
@@ -308,7 +304,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'SFAdUnityAdapter' do |ss|
     ss.ios.deployment_target = '11.0'
-    ss.dependency 'UnityAds'
+    ss.dependency 'UnityAds','4.10.0'
     ss.dependency 'MediatomiOS/MSaas'
     ss.vendored_frameworks = 'MediatomiOS/SFAdUnityAdapter.xcframework'
   end
@@ -319,5 +315,21 @@ Pod::Spec.new do |s|
     ss.dependency 'MediatomiOS/MSaas'
     ss.vendored_frameworks = 'MediatomiOS/SFAdIronsourceAdapter.xcframework'
   end
+  
+  s.subspec 'SFAdQmAdapter' do |ss|
+    ss.ios.deployment_target = '11.0'
+    ss.dependency 'QMAdSDK'
+    ss.dependency 'MediatomiOS/MSaas'
+    ss.vendored_frameworks = 'MediatomiOS/SFAdQmAdapter.xcframework'
+  end
+  
+  s.subspec 'SFAdDmAdapter' do |ss|
+    ss.ios.deployment_target = '11.0'
+    ss.dependency 'DomobSDK','3.4.8'
+    ss.dependency 'MediatomiOS/MSaas'
+    ss.vendored_frameworks = 'MediatomiOS/SFAdDmAdapter.xcframework'
+  end
+
+
 
 end
