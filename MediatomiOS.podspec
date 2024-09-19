@@ -255,6 +255,7 @@ Pod::Spec.new do |s|
     ss.dependency 'AppLovinMediationChartboostAdapter'
     ss.dependency 'AppLovinMediationIronSourceAdapter'
     ss.dependency 'AppLovinMediationYandexAdapter'
+    ss.dependency 'AppLovinMediationFyberAdapter'
     
     ss.dependency 'MediatomiOS/MSaas'
     ss.dependency 'MediatomiOS/SFAdTnAdapter'
@@ -284,16 +285,18 @@ Pod::Spec.new do |s|
   
   s.subspec 'SFAdTpAdapter' do |ss|
     ss.ios.deployment_target = '11.0'
-    ss.dependency 'TradPlusAdSDK', '11.3.0'
+    ss.dependency 'TradPlusAdSDK', '12.1.0'
     
     ss.dependency 'TradPlusAdSDK/IronSourceAdapter', '11.3.0'
-    ss.dependency 'TradPlusAdSDK/TPCrossAdapter', '11.3.0'
+    ss.dependency 'TradPlusAdSDK/TPCrossAdapter', '12.1.0'
     ss.dependency 'TradPlusAdSDK/YandexAdapter', '11.3.0'
     ss.dependency 'IronSourceSDK','8.0.0'
     ss.dependency 'YandexMobileAds','7.0.1'
     ss.dependency 'ChartboostMediationSDK','4.9.0.1'
     ss.dependency 'ChartboostMediationAdapterChartboost','4.9.7.0.0'
     ss.dependency 'TradPlusAdSDK/HeliumAdapter', '11.3.0'
+    ss.dependency 'TradPlusAdSDK/FyberAdapter', '12.1.0'
+    ss.dependency 'Fyber_Marketplace_SDK','8.3.1'
     
     ss.dependency 'MediatomiOS/MSaas'
     ss.vendored_frameworks = 'MediatomiOS/SFAdTpAdapter.xcframework'
