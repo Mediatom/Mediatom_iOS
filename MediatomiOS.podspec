@@ -318,7 +318,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'SFAdQmAdapter' do |ss|
     ss.ios.deployment_target = '11.0'
-    ss.dependency 'QMAdSDK'
+    ss.dependency 'SFQmSDK'
     ss.dependency 'MediatomiOS/MSaas'
     ss.vendored_frameworks = 'MediatomiOS/SFAdQmAdapter.xcframework'
   end
