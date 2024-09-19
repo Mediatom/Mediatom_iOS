@@ -1,0 +1,18 @@
+PODS:
+  - MediatomiOS (2.7.7.9):
+    - MediatomiOS/MSaas (= 2.7.7.9)
+  - MediatomiOS/MSaas (2.7.7.9)
+
+DEPENDENCIES:
+  - MediatomiOS (~> 2.7.7.7)
+
+SPEC REPOS:
+  trunk:
+    - MediatomiOS
+
+SPEC CHECKSUMS:
+  MediatomiOS: 0085c5c80a681c76d70636ae6a5f0f6f8f358afe
+
+PODFILE CHECKSUM: cc9476e846be128d5fd790d132afbe3f2feb4630
+
+COCOAPODS: 1.15.2
