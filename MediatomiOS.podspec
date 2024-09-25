@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.static_framework = true
   s.requires_arc = true
-  s.swift_versions = '5.0'
+  s.swift_versions = '5.1'
   
   s.frameworks   = 'AssetsLibrary', 'MapKit', 'JavaScriptCore', 'StoreKit', 'MobileCoreServices', 'WebKit', 'MediaPlayer', 'CoreMedia', 'AVFoundation', 'CoreLocation', 'CoreTelephony', 'SystemConfiguration', 'AdSupport', 'CoreMotion', 'Security', 'QuartzCore', 'CoreGraphics', 'SafariServices', 'UIKit', 'Foundation', 'AppTrackingTransparency', 'DeviceCheck', 'CoreML'
   s.libraries    = 'c++', 'c++abi', 'resolv', 'xml2', 'bz2', 'z', 'iconv', 'sqlite3'
@@ -323,7 +323,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'SFAdQmAdapter' do |ss|
     ss.ios.deployment_target = '11.0'
-    ss.dependency 'SFQmSDK'
+    ss.dependency 'SFQmSDK', '1.0.9'
     ss.dependency 'MediatomiOS/MSaas'
     ss.vendored_frameworks = 'MediatomiOS/SFAdQmAdapter.xcframework'
   end
