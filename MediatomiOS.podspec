@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MediatomiOS"
-  s.version      = "2.8.0.6"
+  s.version      = "2.8.0.8"
   s.summary      = "Mobile App Aggregation Ad SDK of Mediatom SDK for iOS."
   s.description  = <<-DESC
             Mediatom SDK is an advertising aggregation SDK that allows you to monetize iOS applications through Mediatom advertising.
@@ -162,7 +162,7 @@ Pod::Spec.new do |s|
     ss.ios.deployment_target = '13.0'
     ss.dependency 'MintegralAdSDK/All', '7.6.3'
     ss.dependency 'AppLovinMediationMintegralAdapter', '7.6.3.0.0'
-    ss.dependency 'TradPlusAdSDK/MintegralAdapter', '11.3.0'
+    ss.dependency 'TradPlusAdSDK/MintegralAdapter', '12.3.0'
     ss.dependency 'TPNMintegralSDKAdapter','6.3.50.2'
     ss.dependency 'GoogleMobileAdsMediationMintegral', '7.6.3.0'
     ss.dependency 'MediatomiOS/MSaas'
@@ -177,8 +177,8 @@ Pod::Spec.new do |s|
     ss.ios.deployment_target = '13.0'
     ss.dependency 'Ads-Global', '5.9.0.7'
     ss.dependency 'AppLovinMediationByteDanceAdapter', '5.9.0.7.0'
-    ss.dependency 'TradPlusAdSDK/PangleAdapter', '11.3.0'
-    ss.dependency 'TPNPangleSDKAdapter', '6.3.50.2'
+    ss.dependency 'TradPlusAdSDK/PangleAdapter', '12.3.0'
+    ss.dependency 'TPNPangleSDKAdapter', '6.3.50.4'
     ss.dependency 'GoogleMobileAdsMediationPangle', '5.9.0.7.0'
     ss.dependency 'MediatomiOS/MSaas'
     ss.dependency 'MediatomiOS/SFAdTnAdapter'
@@ -192,8 +192,8 @@ Pod::Spec.new do |s|
     ss.ios.deployment_target = '13.0'
     ss.dependency 'FBAudienceNetwork', '6.15.0'
     ss.dependency 'AppLovinMediationFacebookAdapter', '6.15.0.0'
-    ss.dependency 'TradPlusAdSDK/FacebookAdapter', '11.3.0'
-    ss.dependency 'TPNFacebookSDKAdapter', '6.3.50'
+    ss.dependency 'TradPlusAdSDK/FacebookAdapter', '12.3.0'
+    ss.dependency 'TPNFacebookSDKAdapter', '6.3.50.1'
     ss.dependency 'GoogleMobileAdsMediationFacebook', '6.15.0.0'
     ss.dependency 'MediatomiOS/MSaas'
     ss.dependency 'MediatomiOS/SFAdTnAdapter'
@@ -207,7 +207,7 @@ Pod::Spec.new do |s|
     ss.ios.deployment_target = '13.0'
     ss.dependency 'VungleAds', '7.3.1'
     ss.dependency 'AppLovinMediationVungleAdapter', '7.3.1.0'
-    ss.dependency 'TradPlusAdSDK/VungleAdapter', '11.3.0'
+    ss.dependency 'TradPlusAdSDK/VungleAdapter', '12.3.0'
     ss.dependency 'TPNVungleSDKAdapter', '6.3.50.2'
     ss.dependency 'GoogleMobileAdsMediationVungle', '7.3.1.0'
     ss.dependency 'MediatomiOS/MSaas'
@@ -222,8 +222,8 @@ Pod::Spec.new do |s|
     ss.ios.deployment_target = '13.0'
     ss.dependency 'InMobiSDK', '10.7.2'
     ss.dependency 'AppLovinMediationInMobiAdapter', '10.7.2.0'
-    ss.dependency 'TradPlusAdSDK/InMobiAdapter', '11.3.0'
-    ss.dependency 'TPNInmobiSDKAdapter', '6.3.50'
+    ss.dependency 'TradPlusAdSDK/InMobiAdapter', '12.3.0'
+    ss.dependency 'TPNInmobiSDKAdapter', '6.3.50.1'
     ss.dependency 'GoogleMobileAdsMediationInMobi', '10.7.2.0'
     ss.dependency 'MediatomiOS/MSaas'
     ss.dependency 'MediatomiOS/SFAdTnAdapter'
@@ -252,11 +252,11 @@ Pod::Spec.new do |s|
     ss.dependency 'TPNApplovinSDKAdapter', '6.3.50.2'
     ss.dependency 'GoogleMobileAdsMediationAppLovin', '12.4.2.0'
     
-    ss.dependency 'AppLovinMediationChartboostAdapter'
-    ss.dependency 'AppLovinMediationIronSourceAdapter'
-    ss.dependency 'AppLovinMediationYandexAdapter'
-    ss.dependency 'AppLovinMediationFyberAdapter'
-    ss.dependency 'AppLovinMediationBigoAdsAdapter'
+    ss.dependency 'AppLovinMediationChartboostAdapter', '9.7.0.1'
+    ss.dependency 'AppLovinMediationIronSourceAdapter', '8.0.0.0.0'
+    ss.dependency 'AppLovinMediationYandexAdapter', '7.0.1.0'
+    ss.dependency 'AppLovinMediationFyberAdapter', '8.3.1.1'
+    ss.dependency 'AppLovinMediationBigoAdsAdapter', '4.2.3.1'
     
     
     ss.dependency 'MediatomiOS/MSaas'
@@ -269,7 +269,7 @@ Pod::Spec.new do |s|
   s.subspec 'SFAdBigoAdapter' do |ss|
     ss.ios.deployment_target = '13.0'
     ss.dependency 'BigoADS', '4.2.3'
-    ss.dependency 'TradPlusAdSDK/BigoAdapter', '11.3.0'
+    ss.dependency 'TradPlusAdSDK/BigoAdapter', '12.3.0'
     ss.dependency 'TPNBigoSDKAdapter', '6.3.50.2'
     ss.dependency 'MediatomiOS/MSaas'
     ss.dependency 'MediatomiOS/SFAdTnAdapter'
