@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'SFAdTbAdapter' do |ss|
     ss.ios.deployment_target = '11.0'
-    ss.dependency 'SFTanxSDK', '~> 3.4.5'
+    ss.dependency 'TanxSDK',
     ss.dependency 'MediatomiOS/MSaas'
     ss.vendored_frameworks = 'MediatomiOS/SFAdTbAdapter.xcframework'
   end
