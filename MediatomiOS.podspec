@@ -33,8 +33,8 @@ Pod::Spec.new do |s|
   
   s.subspec 'SFAdCsjAdapter' do |ss|
     ss.ios.deployment_target = '11.0'
-    ss.dependency 'Ads-CN-Beta/BUAdSDK'
-    ss.dependency 'Ads-CN-Beta/CSJMediation'
+    ss.dependency 'Ads-CN/BUAdSDK'
+    ss.dependency 'Ads-CN/CSJMediation'
     ss.dependency 'MediatomiOS/MSaas'
     ss.vendored_frameworks = 'MediatomiOS/SFAdCsjAdapter.xcframework'
   end
@@ -136,7 +136,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'SFAdZyAdapter' do |ss|
     ss.ios.deployment_target = '11.0'
-    ss.dependency 'OctopusSDK'
+    ss.dependency 'SFZySDK', '1.0.0'
     ss.dependency 'MediatomiOS/MSaas'
     ss.vendored_frameworks = 'MediatomiOS/SFAdZyAdapter.xcframework'
   end
