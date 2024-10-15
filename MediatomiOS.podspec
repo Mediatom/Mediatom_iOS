@@ -136,7 +136,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'SFAdZyAdapter' do |ss|
     ss.ios.deployment_target = '11.0'
-    ss.dependency 'SFZySDK', '1.0.0'
+    ss.dependency 'SFZySDK'
     ss.dependency 'MediatomiOS/MSaas'
     ss.vendored_frameworks = 'MediatomiOS/SFAdZyAdapter.xcframework'
   end
@@ -323,7 +323,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'SFAdQmAdapter' do |ss|
     ss.ios.deployment_target = '11.0'
-    ss.dependency 'SFQmSDK', '1.0.9'
+    ss.dependency 'SFQmSDK'
     ss.dependency 'MediatomiOS/MSaas'
     ss.vendored_frameworks = 'MediatomiOS/SFAdQmAdapter.xcframework'
   end
