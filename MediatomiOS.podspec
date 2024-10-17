@@ -158,7 +158,7 @@ Pod::Spec.new do |s|
   s.subspec 'SFTXUBiXAdapter' do |ss|
     ss.ios.deployment_target = '11.0'
     ss.dependency 'MediatomiOS/MSaas'
-    ss.vendored_frameworks = 'MediatomiOS/SFAdUBiXAdapter.xcframework'
+    ss.vendored_frameworks = 'MediatomiOS/SFTXUBiXAdapter.xcframework'
   end
   
   
