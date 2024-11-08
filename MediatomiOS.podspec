@@ -122,14 +122,14 @@ Pod::Spec.new do |s|
   s.subspec 'SFAdYtAdapter' do |ss|
     ss.ios.deployment_target = '11.0'
     # ss.dependency 'YouTuiAdSDK'
-    ss.dependency 'SFYtSDK'
+    ss.dependency 'YDYtSDK'
     ss.dependency 'MediatomiOS/MSaas'
     ss.vendored_frameworks = 'MediatomiOS/SFAdYtAdapter.xcframework'
   end
   
   s.subspec 'SFAdKdxfAdapter' do |ss|
     ss.ios.deployment_target = '11.0'
-    ss.dependency 'SFKdxfSDK'
+    ss.dependency 'YDKdxfSDK'
     ss.dependency 'MediatomiOS/MSaas'
     ss.vendored_frameworks = 'MediatomiOS/SFAdKdxfAdapter.xcframework'
   end
@@ -143,7 +143,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'SFAdLyAdapter' do |ss|
     ss.ios.deployment_target = '11.0'
-    ss.dependency 'SFLySDK'
+    ss.dependency 'YDLySDK'
     ss.dependency 'MediatomiOS/MSaas'
     ss.vendored_frameworks = 'MediatomiOS/SFAdLyAdapter.xcframework'
   end
@@ -155,11 +155,12 @@ Pod::Spec.new do |s|
     ss.vendored_frameworks = 'MediatomiOS/SFAdUBiXAdapter.xcframework'
   end
 
- # s.subspec 'SFTXUBiXAdapter' do |ss|
- #   ss.ios.deployment_target = '11.0'
- #   ss.dependency 'MediatomiOS/MSaas'
- #   ss.vendored_frameworks = 'MediatomiOS/SFTXUBiXAdapter.xcframework'
- # end
+  s.subspec 'SFTXUBiXAdapter' do |ss|
+    ss.ios.deployment_target = '11.0'
+    ss.dependency 'TXUBiXSDK'
+    ss.dependency 'MediatomiOS/MSaas'
+    ss.vendored_frameworks = 'MediatomiOS/SFTXUBiXAdapter.xcframework'
+  end
   
   
   
