@@ -356,5 +356,12 @@ Pod::Spec.new do |s|
     ss.vendored_frameworks = 'MediatomiOS/SFFireFlyAdapter.xcframework'
   end
 
+ s.subspec 'SFAdQiMingAdapter' do |ss|
+    ss.ios.deployment_target = '11.0'
+    ss.dependency 'QiMingADXSDK'
+    ss.dependency 'MediatomiOS/MSaas'
+    ss.vendored_frameworks = 'MediatomiOS/SFFireFlyAdapter.xcframework'
+  end
+
 
 end
